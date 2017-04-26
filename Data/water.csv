@@ -1,0 +1,32 @@
+id,liters,type
+Beef,15415,Animal
+Sheep Meat,10412,Animal
+Pork,5988,Animal
+Butter,5553,Animal
+Cheese,5000,Animal
+Chicken meat,4325,Animal
+Almonds,3311,Plant
+Olives 3,25,Plant
+Rice,2497,Plant
+Pasta (dry),1849,Plant
+Egg,1760,Animal
+Soybeans,1500,Plant
+Bread,1300,Plant
+Pizza,1239,Plant
+Milk,1020,Plant
+Potatoes,1000,Plant
+Corn,900,Plant
+Banana,790,Plant
+Apple,700,Plant
+oats,497,Plant
+Wine,436,Plant
+Beer,296,Plant
+Potatoes,287,Plant
+Avocados,242,Plant
+Cabbage,237,Plant
+Tomato,214,Plant
+Artichoke,168,Plant
+Oranges,111,Plant
+Tea,108,Plant
+Pineapple,68,Plant
+Broccoli,58,Plant

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "Beef",
+    "liters_kg": 15415,
+    "Type": "Animal"
+  },
+  {
+    "id": "Sheep Meat",
+    "liters_kg": 10412,
+    "Type": "Animal"
+  },
+  {
+    "id": "Pork",
+    "liters_kg": 5988,
+    "Type": "Animal"
+  },
+  {
+    "id": "Butter",
+    "liters_kg": 5553,
+    "Type": "Animal"
+  },
+  {
+    "id": "Cheese",
+    "liters_kg": 5000,
+    "Type": "Animal"
+  },
+  {
+    "id": "Chicken meat",
+    "liters_kg": 4325,
+    "Type": "Animal"
+  },
+  {
+    "id": "Almonds",
+    "liters_kg": 3311,
+    "Type": "Plant"
+  },
+  {
+    "id": "Rice",
+    "liters_kg": 2497,
+    "Type": "Plant"
+  },
+  {
+    "id": "Pasta",
+    "liters_kg": 1849,
+    "Type": "Plant"
+  },
+  {
+    "id": "Egg",
+    "liters_kg": 1760,
+    "Type": "Plant"
+  },
+  {
+    "id": "Egg",
+    "liters_kg": 1760,
+    "Type": "Plant"
+  },
+  {
+    "id": "Soybeans",
+    "liters_kg": 1500,
+    "Type": "Plant"
+  },
+  {
+    "id": "Bread",
+    "liters_kg": 1300,
+    "Type": "Plant"
+  },
+  {
+    "id": "Pizza",
+    "liters_kg": 1239,
+    "Type": "Plant"
+  },
+  {
+    "id": "Milk",
+    "liters_kg": 1020,
+    "Type": "Plant"
+  },
+  {
+    "id": "Potatoes",
+    "liters_kg": 1000,
+    "Type": "Plant"
+  },
+  {
+    "id": "Corn",
+    "liters_kg": 900,
+    "Type": "Plant"
+  },
+  {
+    "id": "Banana",
+    "liters_kg": 790,
+    "Type": "Plant"
+  },
+  {
+    "id": "Apple",
+    "liters_kg": 700,
+    "Type": "Plant"
+  },
+  {
+    "id": "Oats",
+    "liters_kg": 497,
+    "Type": "Plant"
+  },
+  {
+    "id": "Wine",
+    "liters_kg": 436,
+    "Type": "Plant"
+  },
+  {
+    "id": "Olives",
+    "liters_kg": 325,
+    "Type": "Plant"
+  },
+  {
+    "id": "Beer",
+    "liters_kg": 296,
+    "Type": "Plant"
+  },
+  {
+    "id": "Potatoes",
+    "liters_kg": 287,
+    "Type": "Plant"
+  },
+  {
+    "id": "Avocados",
+    "liters_kg": 242,
+    "Type": "Plant"
+  },
+  {
+    "id": "Cabbage",
+    "liters_kg": 237,
+    "Type": "Plant"
+  },
+  {
+    "id": "Tomato",
+    "liters_kg": 214,
+    "Type": "Plant"
+  },
+  {
+    "id": "Artichoke",
+    "liters_kg": 168,
+    "Type": "Plant"
+  },
+  {
+    "id": "Oranges",
+    "liters_kg": 111,
+    "Type": "Plant"
+  },
+  {
+    "id": "Tea",
+    "liters_kg": 108,
+    "Type": "Plant"
+  },
+  {
+    "id": "Pineapple",
+    "liters_kg": 68,
+    "Type": "Plant"
+  },
+  {
+    "id": "Broccoli",
+    "liters_kg": 58,
+    "Type": "Plant"
+  }
+]
