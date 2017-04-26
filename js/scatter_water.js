@@ -1,9 +1,8 @@
 (function(){
-    const data = [10]
+    d3.json('./data/water.json', data => {
 
-    const canvas = d3.select("body")
-        .append('svg')
-        .attr('width', 500)
-        .attr('height', 500)
 
+
+
+    })
 })();

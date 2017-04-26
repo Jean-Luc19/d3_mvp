@@ -41,6 +41,7 @@
             .attr('x', (d, i) => i * (width / datapoints.length) - 40)
             .attr('y', d => height - yScale(d.liters))
             .attr('fill', d => colorScale(d.liters))
-            .on('click', d => console.log(d))
+            .append("title")
+            .text(d => d.id)
     }
 })();
