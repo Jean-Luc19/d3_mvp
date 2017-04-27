@@ -6,7 +6,7 @@
     const formatPercent = d3.format(".0%");
 
     const x = d3.scale.ordinal()
-        .rangeRoundBands([0, width], .5, 1);
+        .rangeRoundBands([0, width], .1, 1);
 
     const y = d3.scale.linear()
         .range([height, 0]);
@@ -62,7 +62,7 @@
         .enter().append("rect")
           .attr("class", "bar")
           .attr("x", d => x(d.id))
-          .attr("width", x.rangeBand() + 10)
+          .attr("width", x.rangeBand())
           .attr("y", d => y(d.liters))
           .attr("height", d => height - y(d.liters))
           .attr("fill", 'steelblue');

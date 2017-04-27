@@ -18,11 +18,11 @@
     // step 1: get circles to the middle
     // step 2: don't have them collide!
 
-    const forceXSeparate = d3.forceX(d => d.type === 'Animal' ? 200 : 900).strength(0.075);
+    const forceXSeparate = d3.forceX(d => d.Type === 'Animal' ? 200 : 900).strength(0.075);
     const forceXCombine = d3.forceX(d => (width / 2)).strength(0.075);
 
     const forceY = d3.forceY(d => height/2).strength(0.05);
-    const forceCollide = d3.forceCollide(d => radiusScale(d.liters) + 1);
+    const forceCollide = d3.forceCollide(d => radiusScale(d.liters_kg) + 1);
 
     const simulation = d3.forceSimulation()
         .force("x", forceXCombine)
@@ -30,14 +30,14 @@
         .force("collide", forceCollide)
 
     d3.queue()
-        .defer(d3.csv, 'https://gist.githubusercontent.com/Jean-Luc19/64017ff75d36d92ce00919b211ef26d1/raw/920eeaccf64a5a93edd89ce0cff027d1d383f8bf/water.csv')
+        .defer(d3.csv, 'https://gist.githubusercontent.com/Jean-Luc19/1ca1721138fd9e6ab38a0bbf129fe884/raw/9a6ee4bd68d652d5b6181dcecbfaedc898bb7fff/water_use.csv')
         .await(ready)
 
     function ready (error, datapoints) {
-        defs.selectAll(".artist-pattern")
+        defs.selectAll(".food-pattern")
             .data(datapoints)
             .enter().append("pattern")
-            .attr("class", "artist-pattern")
+            .attr("class", "food-pattern")
             .attr("id", d => d.id.toLowerCase().replace(/ /g, "-"))
             .attr("height", "100%")
             .attr("width", "100%")
@@ -47,17 +47,17 @@
             .attr("width", 1)
             .attr("preserveAspectRatio", "none")
             .attr("xmlns:xlink", "http://www.w3.org/1999/xlink")
-            .attr("xlink:href", './images/beef.png')
+            .attr("xlink:href", d => `./${d.image_path}`)
 
         const circles = svg.selectAll(".artist")
             .data(datapoints)
             .enter().append("circle")
             .attr("class", "artist")
-            .attr("r", d => radiusScale(d.liters))
+            .attr("r", d => radiusScale(d.liters_kg))
             .attr("fill", 'steelblue')
             .on('click', d => {
                 svg.selectAll(".artist")
-                    .attr('fill', 'url(#beef)')
+                    .attr('fill', d => `url(#${d.id.toLowerCase().replace(/ /g, "-")})`)
             })
 
 
