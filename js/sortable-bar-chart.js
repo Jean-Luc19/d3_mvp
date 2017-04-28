@@ -33,7 +33,7 @@
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.csv('https://gist.githubusercontent.com/Jean-Luc19/1ca1721138fd9e6ab38a0bbf129fe884/raw/9a6ee4bd68d652d5b6181dcecbfaedc898bb7fff/water_use.csv', function(error, data) {
+    d3.csv('https://gist.githubusercontent.com/Jean-Luc19/2513b87e345a9ec65dcb31689f3d34e9/raw/d782efb91770222917145fff6c0d9a5396cb5bbb/h20_food.csv', function(error, data) {
         const ticks = data.map(d => Number(d.liters_kg));
         const tickLabels = data.map(d => d.id)
      xAxis.tickValues(ticks)

@@ -7,9 +7,7 @@
         .attr("width", width)
         .append("g")
         .attr("transform", "translate(0.0)")
-
         const defs = svg.append("defs")
-
 
     const radiusScale = d3.scaleSqrt()
                             .domain([58, 16000])
@@ -18,7 +16,7 @@
     // step 1: get circles to the middle
     // step 2: don't have them collide!
 
-    const forceXSeparate = d3.forceX(d => d.Type === 'Animal' ? 300 : 900).strength(0.075);
+    const forceXSeparate = d3.forceX(d => d.Type === 'Animal' ? 350 : 950).strength(0.075);
     const forceXCombine = d3.forceX(d => (width / 2)).strength(0.075);
 
     const forceY = d3.forceY(d => height/2).strength(0.075);
@@ -30,7 +28,7 @@
         .force("collide", forceCollide)
 
     d3.queue()
-        .defer(d3.csv, 'https://gist.githubusercontent.com/Jean-Luc19/1ca1721138fd9e6ab38a0bbf129fe884/raw/9a6ee4bd68d652d5b6181dcecbfaedc898bb7fff/water_use.csv')
+        .defer(d3.csv, 'https://gist.githubusercontent.com/Jean-Luc19/2513b87e345a9ec65dcb31689f3d34e9/raw/d782efb91770222917145fff6c0d9a5396cb5bbb/h20_food.csv')
         .await(ready)
 
     function ready (error, datapoints) {
