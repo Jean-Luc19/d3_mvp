@@ -1,14 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #eee;
+}
+main, header, footer {
+    width: 55em;
+    margin: 1em auto;
 }
 
 header,footer {
     background-color: hsl(200,50%,50%);
-    height: 6em
+    height: 6em;
 }
 
-section {
-  height:24em;
+.fill {
+    object-fit: cover;
+    width: 100%;
+    height: 10em;
+
+}
+
+header, nav {
+    text-align: center;
+}
+
+footer p {
+    padding-top: 5px;
+    font-size: 10px;
 }
 
 .flexbox {
@@ -18,7 +39,7 @@ section {
 }
 
 .center {
-  background-color:hsl(200,80%,80%);
+  background-color:#eee;
   flex:4;
 }
 .left {
@@ -31,31 +52,6 @@ section {
 
 
 
-.axis text {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.bar {
-
-  fill-opacity: .9;
-}
-
-.x.axis path {
-  display: none;
-}
-
-label {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
 
 @media (max-width:600px) {
   .flexbox {

@@ -1,6 +1,6 @@
 (function() {
     const width = 1200,
-          height = 700;
+          height = 900;
     const svg = d3.select("#chart")
         .append("svg")
         .attr("height", height)
@@ -18,11 +18,11 @@
     // step 1: get circles to the middle
     // step 2: don't have them collide!
 
-    const forceXSeparate = d3.forceX(d => d.Type === 'Animal' ? 200 : 900).strength(0.075);
+    const forceXSeparate = d3.forceX(d => d.Type === 'Animal' ? 300 : 900).strength(0.075);
     const forceXCombine = d3.forceX(d => (width / 2)).strength(0.075);
 
-    const forceY = d3.forceY(d => height/2).strength(0.05);
-    const forceCollide = d3.forceCollide(d => radiusScale(d.liters_kg) + 1);
+    const forceY = d3.forceY(d => height/2).strength(0.075);
+    const forceCollide = d3.forceCollide(d => radiusScale(d.liters_kg) + .5);
 
     const simulation = d3.forceSimulation()
         .force("x", forceXCombine)

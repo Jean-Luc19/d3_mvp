@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>D3 Project</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Data Driven Documents: D3</h1>
+    </header>
+    <main>
+        <section class='flexbox'>
+            <div class="center">
+                <h3>D3 in Action</h3>
+                <p>Append an SVG to the div with id Chart<code>d3.selectAll("#chart")</code> , that's your <em>canvas</em>.</p>
+
+                <p>Select all the <code>.circles</code> in your canvas and append circles to them.</p>
+
+                <p>Wait, <em>append circles to <code>circles classes</code> that don't exist?!?</em></p>
+
+                <p>The d3 <code>.data()</code> method binds your canvas to the data, then the <code>.enter()</code> method creates new nodes in the DOM for incoming data. Once your data is bound any changes to the data array will be reflected in the DOM</p>
+
+                <p>Carving out pieces of the DOM, binding them to data and updating the DOM when that data changes... sound familiar?</p>
+                <p data-height="265" data-theme-id="0" data-slug-hash="PmWMrL" data-default-tab="js,result" data-user="jean-luc19" data-embed-version="2" data-pen-title="PmWMrL" class="codepen">See the Pen <a href="https://codepen.io/jean-luc19/pen/PmWMrL/">PmWMrL</a> by Aaron Gottlieb (<a href="http://codepen.io/jean-luc19">@jean-luc19</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+            <a href="/react.html">Next</a>
+            </div>
+        </section>
+    </main>
+    <footer><img class="fill" src="https://cdn.pixabay.com/photo/2014/08/22/22/10/water-424807_960_720.jpg" alt=""></footer>
+
+
+
+</body>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous">
+</script>
+<script src="js/sortable-bar-chart.js"></script>
+</html>
+<!--  -->
