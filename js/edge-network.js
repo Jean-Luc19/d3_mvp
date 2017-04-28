@@ -59,23 +59,3 @@ var visualization = d3plus.viz()
   .size("size")
   .id("name")
   .draw()
-
-
-  /*
-    3 months
-    3lbs corn + 3bs soy per day
-    corn: 570 gallons/lb -> 1712 gallons/day -> 51,000 corn water/month
-    Soy: 951 gallons/lb -> 2853 gallons/day -> 85,590 soy water/ month
-
-
-    month 1 weight: 984 -> 19.68 gallon/day -> 590 gallons/month
-    month 2 weight: 1056 lbs -> 21.2 gallon/day -> 633.6 gallons/month
-    month 3 wieght: 1,128lbs -> 24 gallons/day -> 720 month
-    2 gallons per 100lbs body weight
-    gain 2.4 lbs per day
-
-    total water for cow = 153,000 corn, 255,000 soy, 1954 drinking water = 404,943 / 490lbs beef per cow= 880 gallons per lb
-
-    const data = []
-
-  */
