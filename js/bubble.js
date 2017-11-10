@@ -28,7 +28,7 @@
         .force("collide", forceCollide)
 
     d3.queue()
-        .defer(d3.csv, 'https://gist.githubusercontent.com/Jean-Luc19/2513b87e345a9ec65dcb31689f3d34e9/raw/d782efb91770222917145fff6c0d9a5396cb5bbb/h20_food.csv')
+        .defer(d3.csv, 'https://gist.githubusercontent.com/aaronago/2513b87e345a9ec65dcb31689f3d34e9/raw/d782efb91770222917145fff6c0d9a5396cb5bbb/h20_food.csv')
         .await(ready)
 
     function ready (error, datapoints) {
